@@ -1,6 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background-attachment: fixed;
   width: 100%;
   max-width: 375px;
   background-color: var(--bg-color);
@@ -100,9 +101,6 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
-}
-
-.header__theme-menu-button_active {
   pointer-events: none;
 }
 
@@ -114,7 +112,6 @@
   line-height: 82.5%;
   font-weight: 700;
   word-wrap: break-word;
-  grid-area: title;
   text-shadow: 4px 4px 0 var(--accent-color);
   color: var(--title-color);
   margin-block-start: 65px;
