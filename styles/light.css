@@ -5,7 +5,7 @@
   
 */
 :root.theme-light {
-  --font: 'IBM Plex Mono', sans-serif; 
+  --font: 'IBM Plex Mono', monospace; 
   --corner: 25px; 
   --font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); 
   --font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
@@ -17,55 +17,118 @@
   --bg-image: url(../images/cover-image-light.png);
 }
 
-  .theme-light .page {
-    /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-light .page {
+  /* Вам также нужно будет написать ряд подобных селекторов */
+  background-color: var(--bg-color);
+}
+
+
+.theme-light .title-decor {
+  color: var(--paragraph-color);
+}
+
+.theme-light .header__theme-menu-button_active {
+  border: 1px solid var(--paragraph-color);
+}
+
+.theme-light .main__title {
+  color: var(--paragraph-color);
+}
+
+.theme-light .header:before {
+  border-top: 1px solid var(--paragraph-color);
+  border-right: 1px solid var(--paragraph-color);
+}
+.theme-light .header:after {
+  border-bottom: 1px solid var(--paragraph-color);
+  border-left: 1px solid var(--paragraph-color);
+}
+
+.theme-light .footer:before {
+  border-top: 1px solid var(--paragraph-color);
+  border-right: 1px solid var(--paragraph-color);
+}
+
+.theme-light .footer:after {
+  border-bottom: 1px solid var(--paragraph-color);
+  border-left: 1px solid var(--paragraph-color);
+}
+
+.theme-light .lamp {
+  opacity: 0;
+}
+
+.theme-light .header__theme-menu-button {
+  color: var(--paragraph-color);
+}
+
+.theme-light .header__theme-menu-button:hover {
+  border: solid 1px var(--paragraph-color);
+}
+
+
+@media (prefers-color-scheme: light) {
+
+  :root:not(.theme-dark) {
+    --font: 'IBM Plex Mono', sans-serif; 
+    --corner: 25px; 
+    --font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); 
+    --font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
+    --bg-color: #FFF1F7;
+    --title-color: #FFC2E6;
+    --accent-color: #FF8DCB;
+    --paragraph-color: #353430;
+    --focus-visible: #353430;
+    --bg-image: url(../images/cover-image-light.png);
+  }
+
+  :root:not(.theme-dark) .page {
     background-color: var(--bg-color);
   }
   
 
-  .theme-light .title-decor {
+  :root:not(.theme-dark) .title-decor {
     color: var(--paragraph-color);
   }
 
-  .theme-light .header__theme-menu-button_active {
+  :root:not(.theme-dark) .header__theme-menu-button_active {
     border: 1px solid var(--paragraph-color);
   }
   
-  .theme-light .main__title {
+  :root:not(.theme-dark) .main__title {
     color: var(--paragraph-color);
   }
   
-  .theme-light .header:before {
+  :root:not(.theme-dark) .header:before {
     border-top: 1px solid var(--paragraph-color);
     border-right: 1px solid var(--paragraph-color);
   }
-  .theme-light .header:after {
+  :root:not(.theme-dark) .header:after {
     border-bottom: 1px solid var(--paragraph-color);
     border-left: 1px solid var(--paragraph-color);
   }
   
-  .theme-light .footer:before {
+  :root:not(.theme-dark) .footer:before {
     border-top: 1px solid var(--paragraph-color);
     border-right: 1px solid var(--paragraph-color);
   }
   
-  .theme-light .footer:after {
+  :root:not(.theme-dark) .footer:after {
     border-bottom: 1px solid var(--paragraph-color);
     border-left: 1px solid var(--paragraph-color);
   }
   
-  .theme-light .lamp {
+  :root:not(.theme-dark) .lamp {
     opacity: 0;
   }
   
-  .theme-light .header__theme-menu-button {
+  :root:not(.theme-dark) .header__theme-menu-button {
     color: var(--paragraph-color);
   }
   
-  .theme-light .header__theme-menu-button:hover {
+  :root:not(.theme-dark) .header__theme-menu-button:hover {
     border: solid 1px var(--paragraph-color);
   }
 
 
-  
-  
+}
