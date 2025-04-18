@@ -7,8 +7,8 @@
   --accent-color: #FF0070;
   --title-color: #DB00FF;
   --paragraph-color: #F1B2CE;
-  --focus-visible: white;
-  --menu-button: solid 1px rgba(255, 0, 112, 0.6);
+  --menu-button-hover: 1px solid rgba(255, 0, 112, 0.4);
+  --menu-button-focus: 1px solid #FF0070;
   --corner: 25px;
   --bg-image: url(../images/cover-image-dark.png);
   --font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
