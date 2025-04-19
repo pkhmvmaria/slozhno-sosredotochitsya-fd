@@ -6,11 +6,15 @@
 */
 :root.theme-light {
   --font: 'IBM Plex Mono', monospace; 
+  --button-color: #353430;
   --corner: 25px; 
   --font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); 
   --font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
   --bg-color: #FFF1F7;
   --title-color: #FFC2E6;
+  --lamp-opacity: 0;
+  --title-decor-color: #353430;
+  --main-title-color: #353430;
   --accent-color: #FF8DCB;
   --paragraph-color: #353430;
   --menu-button-focus: 1px solid #353430;
@@ -18,68 +22,25 @@
   --bg-image: url(../images/cover-image-light.png);
 }
 
+
 @media (prefers-color-scheme: light) {
 
   :root:not(.theme-dark) {
-    --font: 'IBM Plex Mono', sans-serif; 
+    --font: 'IBM Plex Mono', monospace; 
+    --button-color: #353430;
     --corner: 25px; 
     --font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); 
     --font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
     --bg-color: #FFF1F7;
     --title-color: #FFC2E6;
+    --lamp-opacity: 0;
+    --title-decor-color: #353430;
+    --main-title-color: #353430;
     --accent-color: #FF8DCB;
     --paragraph-color: #353430;
     --menu-button-focus: 1px solid #353430;
     --menu-button-hover: 1px solid rgba(50, 49, 45, 0.4);
     --bg-image: url(../images/cover-image-light.png);
-  }
-
-  :root:not(.theme-dark) .page {
-    background-color: var(--bg-color);
-  }
-  
-
-  :root:not(.theme-dark) .title-decor {
-    color: var(--paragraph-color);
-  }
-
-  :root:not(.theme-dark) .header__theme-menu-button_active {
-    border: 1px solid var(--paragraph-color);
-  }
-  
-  :root:not(.theme-dark) .main__title {
-    color: var(--paragraph-color);
-  }
-  
-  :root:not(.theme-dark) .header:before {
-    border-top: 1px solid var(--paragraph-color);
-    border-right: 1px solid var(--paragraph-color);
-  }
-  :root:not(.theme-dark) .header:after {
-    border-bottom: 1px solid var(--paragraph-color);
-    border-left: 1px solid var(--paragraph-color);
-  }
-  
-  :root:not(.theme-dark) .footer:before {
-    border-top: 1px solid var(--paragraph-color);
-    border-right: 1px solid var(--paragraph-color);
-  }
-  
-  :root:not(.theme-dark) .footer:after {
-    border-bottom: 1px solid var(--paragraph-color);
-    border-left: 1px solid var(--paragraph-color);
-  }
-  
-  :root:not(.theme-dark) .lamp {
-    opacity: 0;
-  }
-  
-  :root:not(.theme-dark) .header__theme-menu-button {
-    color: var(--paragraph-color);
-  }
-  
-  :root:not(.theme-dark) .header__theme-menu-button:focus-visible {
-    border-bottom: var(--menu-button-focus);
   }
 
 

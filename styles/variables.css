@@ -4,8 +4,12 @@
 */
 :root {
   --bg-color: #000028;
+  --button-color: #FF0070;
   --accent-color: #FF0070;
   --title-color: #DB00FF;
+  --title-decor-color: #000028;
+  --main-title-color: #FF0070;
+  --lamp-opacity: 1;
   --paragraph-color: #F1B2CE;
   --menu-button-hover: 1px solid rgba(255, 0, 112, 0.4);
   --menu-button-focus: 1px solid #FF0070;
